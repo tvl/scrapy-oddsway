@@ -1,0 +1,7 @@
+#/bin/bash
+echo "Crawl odds"
+date
+cd /home/tvl/dev/scrapy-oddsway/oddsway
+#scrapy crawl schedule -o data/schedule.csv --logfile schedule.log
+#scp /home/tvl/dev/scrapy-soccerway/soccerway/data/schedule.csv tvl@sun.xopen.ru:/home/tvl/dev/swe/data/
+date
