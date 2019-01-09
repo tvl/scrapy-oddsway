@@ -8,11 +8,11 @@ from datetime import datetime, timezone
 class OddsSpider(Spider):
     name = "odds"
     #allowed_domains = ["http://www.soccerway.mobi/"]
-    start_urls = ['http://www.oddsway.com/betting?function=home']
+    start_urls = ['http://liveodds.oddsway.com/betting?function=home']
 
     def start_requests(self):
 
-        start_url = 'http://www.oddsway.com/betting?function=home'
+        start_url = 'http://liveodds.oddsway.com/betting?function=home'
         request = Request(url=start_url, callback=self.parse_odds)
         request.meta['proxy'] = 'http://127.0.0.1:8118'
         yield request
